@@ -10,7 +10,7 @@ body {
 
 /* Header */
 header {
-    background-color: #0078d4;
+    background-color: #ffffff;  /* Weißer Hintergrund für den Header */
     color: white;
     text-align: center;
     padding: 1.5em 0;
@@ -29,7 +29,7 @@ header p {
 
 /* Navigation */
 nav {
-    background-color: #0056a3;
+    background-color: #ff6600;  /* Orange Hintergrund für die Navigation */
     padding: 0.5em 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
