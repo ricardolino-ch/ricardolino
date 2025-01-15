@@ -1,111 +1,73 @@
-/* Grundlegende Stile für die Seite */
+/* Hauptfarben */
+:root {
+    --primary-color: #F4A261; /* Logo-Orange */
+    --secondary-color: #E76F51; /* Dunkleres Orange */
+    --background-color: #FAF3E0; /* Helles Beige */
+    --text-color: #333333; /* Dunkles Grau für Text */
+}
+
+/* Hintergrund und Textfarben */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 /* Header */
 header {
-    background-color: #ffffff; /* Weißer Header */
-    border-bottom: 2px solid #f4a261; /* Dünne orange Linie */
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
-header .container {
-    padding: 15px;
-}
-
-header img {
-    height: 50px;
+header a img {
+    max-width: 200px;
+    height: auto;
 }
 
 /* Navigation */
 .navbar {
-    background-color: #f4a261; /* Orange Farbe wie das Logo */
+    background-color: var(--background-color);
+    border-bottom: 1px solid var(--secondary-color);
 }
 
 .navbar .nav-link {
-    color: #ffffff;
+    color: var(--text-color);
     font-weight: bold;
 }
 
 .navbar .nav-link:hover {
-    color: #333333; /* Dunkelgrau beim Hover */
+    color: var(--secondary-color);
 }
 
-/* Haupttitel */
-h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-align: center;
-    color: #f4a261;
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
 }
 
-/* Kategorienbereich */
-main {
-    padding: 20px;
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
 }
 
-main h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #f4a261;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
+/* Karten und Kategorien */
 .card {
-    background-color: #ffffff; /* Weiße Karten */
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid var(--primary-color);
 }
 
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+.card-title {
+    color: var(--secondary-color);
 }
 
-.card .card-title {
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: #333;
+.card a {
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 4px;
 }
 
-.card .btn-primary {
-    background-color: #f4a261; /* Orange Buttons */
-    border: none;
-    font-weight: bold;
-}
-
-.card .btn-primary:hover {
-    background-color: #e76f51; /* Dunkleres Orange beim Hover */
-}
-
-/* Footer */
-footer {
-    background-color: #333333;
-    color: #ffffff;
-    text-align: center;
-    padding: 15px 0;
-    font-size: 0.9rem;
-    border-top: 2px solid #f4a261; /* Orange Linie oben */
-}
-
-/* Responsivität */
-@media (max-width: 768px) {
-    .card .btn-primary {
-        font-size: 0.9rem;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    main h2 {
-        font-size: 1.5rem;
-    }
+.card a:hover {
+    background-color: var(--secondary-color);
 }
