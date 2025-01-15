@@ -10,8 +10,8 @@ body {
 
 /* Header */
 header {
-    background-color: #ffffff;
-    color: black;
+    background-color: #0078d4;
+    color: white;
     text-align: center;
     padding: 1.5em 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -27,13 +27,9 @@ header p {
     margin-top: 0.5em;
 }
 
-header img {
-    height: auto;
-}
-
 /* Navigation */
 nav {
-    background-color: #c88512;
+    background-color: #0056a3;
     padding: 0.5em 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -61,17 +57,6 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #ffd700;
-}
-
-/* Main Bereich */
-main {
-    padding: 0 2em; /* Abstand links und rechts */
-}
-
-main h2 {
-    margin-bottom: 1.5em; /* Abstand unter der Überschrift */
-    margin-top: 1em; /* Abstand über der Überschrift */
-    text-align: center; /* Zentrieren der Überschrift */
 }
 
 /* Kategorien */
