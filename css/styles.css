@@ -10,8 +10,8 @@ body {
 
 /* Header */
 header {
-    background-color: #0078d4;
-    color: white;
+    background-color: #ffffff;
+    color: black;
     text-align: center;
     padding: 1.5em 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -27,9 +27,13 @@ header p {
     margin-top: 0.5em;
 }
 
+header img {
+    height: auto;
+}
+
 /* Navigation */
 nav {
-    background-color: #0056a3;
+    background-color: #c88512;
     padding: 0.5em 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
